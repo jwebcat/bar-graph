@@ -14,22 +14,82 @@
 </head>
 
 <body>
-	<section class="container">
+	<section style="margin-bottom: 51px;">
+	    <article class="container">
 
-	    <h1 style="text-align: center; font-size: 3em;">Bar Graph</h1>
-	    <p style="text-align: center; font-size: 1.5em;">Simple CSS bar graphs.</p>
+            <h1 class="text-taller no-space-bottom text-center"><i class="icon-logo"></i> Bar Graph</h1>
+            <p class="text-tall text-muted text-center">Simple CSS bar graphs.</p>
 
-        <div class="graph">
-            <div class="graph-bar" style="width: 90%;">
-                Label in Bar
+	        <p class="text-center"><a class="btn btn-color btn-large" href="https://github.com/cferdinandi/bar-graph/"><i class="icon-github"></i> Download on GitHub</a></p>
+
+	        <p class="text-center text-muted">Or keep reading to learn more...</p>
+
+	        <hr>
+
+
+	        <h1 class="text-center">How it Works</h1>
+
+	        <p>Create bar graphs with two simple classes.</p>
+
+	        <p>A lightly colored background provides scale. Text labels can go inside or outside of the bar. Use percentages to set the width for fluid bar graphs.</p>
+
+            <div class="graph">
+                <div class="graph-bar" style="width: 90%;">
+                    Label in Bar
+                </div>
             </div>
-        </div>
-        <div class="graph">
-            <div class="graph-bar" style="width: 20%;"></div>
-            Label Outside of Bar
-        </div>
+            
+            <div class="graph space-bottom">
+                <div class="graph-bar" style="width: 20%;"></div>
+                Label Outside of Bar
+            </div>
 
+            <pre>&lt;div class="graph"&gt;
+    &lt;div class="graph-bar" style="width: 90%;"&gt;
+        Label in Bar
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="graph"&gt;
+    &lt;div class="graph-bar" style="width: 20%;"&gt;&lt;/div&gt;
+    Label Outside of Bar
+&lt;/div&gt;</pre>
+
+            <hr>
+
+            <h1 class="text-center">Stacked Bars</h1>
+
+            <p>If you want, you can display stacked bar. Just make sure the combined widths don't exceed 100%.</p>
+
+
+            <div class="graph space-bottom">
+                <div class="graph-bar" style="width: 30%;">
+                    Bar 1
+                </div>
+                <div class="graph-bar graph-bar-alt" style="width: 50%;">
+                    Bar 2
+                </div>
+            </div>
+
+            <pre>&lt;div class="graph"&gt;
+    &lt;div class="graph-bar" style="width: 30%;"&gt;
+        Bar 1
+    &lt;/div&gt;
+    &lt;div class="graph-bar graph-bar-alt" style="width: 50%;"&gt;
+        Bar 2
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+        </article>
 	</section>
+
+	<footer class="bg-gray">
+        <article class="container">
+
+            <p class="text-small text-muted text-center">Built by <a href="http://gomakethings.com">Chris Ferdinandi</a>. Licensed under <a href="http://www.wtfpl.net/">WTFPL</a>.</p>
+
+        </article>
+	</footer>
 
 </body>
 </html>
